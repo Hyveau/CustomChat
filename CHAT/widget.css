@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+}
+
+.messages {
+    position: absolute;
+    inset : 0;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.message {
+    overflow: hidden;
+    border: solid 2px var(--color);
+    animation: MessageIn 1s;
+    padding: .5rem;
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+
+.meta {
+    display: flex;
+    align-items: center;
+    color: var(--color);
+    font-weight: bold;
+}
+
+
+.content {
+    display: absolute;
+    color: black;
+    font-weight: lighter;
+}
+
+
+.badges {
+    display: flex;
+    align-items: center;
+}
+
+
+.badges img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .3rem;
+}
+
+
+@keyframes MessageIn {
+    from {transform: translateY(40px); opacity: 0;
+    max-height: 0;}
+    to {transform: translateY(0); opacity: 1;
+    max-height: 400px;}
+}
