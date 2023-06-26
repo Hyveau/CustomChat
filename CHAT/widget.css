@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     overflow: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: gray;
 }
 
@@ -11,7 +11,7 @@ body, html {
     top: auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: .5rem;
 }
 
 .message {
@@ -20,21 +20,28 @@ body, html {
     animation: MessageIn 1s;
     padding: .5rem;
     margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 
 .meta {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     color: var(--color);
     font-weight: bold;
 }
 
 
+.separator {
+    color: var(--color);
+    font-weight: bolder;
+}
+
+
 .content {
-    display: absolute;
     color: black;
     font-weight: lighter;
 }
@@ -54,8 +61,8 @@ body, html {
 
 
 @keyframes MessageIn {
-    from {transform: translateY(40px); opacity: 0;
+    from {transform: translateX(40px); opacity: 0;
     max-height: 0;}
-    to {transform: translateY(0); opacity: 1;
+    to {transform: translateX(0); opacity: 1;
     max-height: 400px;}
 }
