@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: gray;
+    
 }
 
 .messages {
@@ -11,7 +11,7 @@ body, html {
     top: auto;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .1rem;
 }
 
 .message {
@@ -21,9 +21,12 @@ body, html {
     padding: .5rem;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     border-radius: 25px;
     background-color: whitesmoke;
+    display: inline-table;
+    width: max-content;
+    max-width: 94%;
 }
 
 
@@ -32,6 +35,7 @@ body, html {
     align-items: baseline;
     color: var(--color);
     font-weight: bold;
+    margin-left: 10px;
 }
 
 
@@ -44,6 +48,8 @@ body, html {
 .content {
     color: black;
     font-weight: lighter;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
